@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy - Share Your Feedback</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="StudyBuddy Logo" width="40" height="40" class="d-inline-block align-top">
+                <span class="brand-text">StudyBuddy</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="study-now.html">Study Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="procrastination.html">Productivity</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="feedback-container">
+        <div class="feedback-header">
+            <h1>Your Feedback Matters!</h1>
+            <p>Help us improve StudyBuddy and make learning better for everyone.</p>
+        </div>
+
+        <!-- Quick Reaction Section -->
+        <div class="quick-reaction">
+            <h3>How's your experience with StudyBuddy?</h3>
+            <div class="reaction-buttons">
+                <button class="reaction-btn" data-rating="1">
+                    <i class="far fa-angry"></i>
+                    <span>Poor</span>
+                </button>
+                <button class="reaction-btn" data-rating="2">
+                    <i class="far fa-frown"></i>
+                    <span>Fair</span>
+                </button>
+                <button class="reaction-btn" data-rating="3">
+                    <i class="far fa-meh"></i>
+                    <span>Okay</span>
+                </button>
+                <button class="reaction-btn" data-rating="4">
+                    <i class="far fa-smile"></i>
+                    <span>Good</span>
+                </button>
+                <button class="reaction-btn" data-rating="5">
+                    <i class="far fa-grin-stars"></i>
+                    <span>Amazing</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Detailed Feedback Form -->
+        <div class="feedback-form-container">
+            <form id="feedbackForm" class="feedback-form">
+                <div class="form-section">
+                    <h3>Tell us more</h3>
+                    
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="category-select mb-4">
+                        <label>What would you like to give feedback about?</label>
+                        <div class="category-buttons">
+                            <button type="button" class="category-btn" data-category="general">
+                                <i class="fas fa-star"></i>
+                                General
+                            </button>
+                            <button type="button" class="category-btn" data-category="feature">
+                                <i class="fas fa-lightbulb"></i>
+                                Feature Request
+                            </button>
+                            <button type="button" class="category-btn" data-category="bug">
+                                <i class="fas fa-bug"></i>
+                                Bug Report
+                            </button>
+                            <button type="button" class="category-btn" data-category="content">
+                                <i class="fas fa-book"></i>
+                                Content
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                        <textarea class="form-control" id="feedback" placeholder="Your Feedback" style="height: 150px" required></textarea>
+                        <label for="feedback">Your Detailed Feedback</label>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="subscribe">
+                        <label class="form-check-label" for="subscribe">
+                            Keep me updated on how my feedback helps improve StudyBuddy
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="submit-text">Submit Feedback</span>
+                        <span class="submit-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Success Message (Hidden by default) -->
+        <div class="success-message" style="display: none;">
+            <div class="success-content">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You!</h2>
+                <p>Your feedback has been submitted successfully. We appreciate your help in making StudyBuddy better!</p>
+                <button class="close-success-btn">Back to Feedback</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./assets/images/logo.png" alt="StudyBuddy Logo" width="50" height="50">
+                    <h4>StudyBuddy</h4>
+                    <p>Elevating Academic Performance</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="study-now.html">Study Tools</a></li>
+                            <li><a href="procrastination.html">Productivity Guide</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="feedback.html">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 StudyBuddy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="src/js/feedback.js"></script>
+</body>
+</html>

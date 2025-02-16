@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyBuddy - Academic Success Platform</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/images/logo.png" alt="StudyBuddy Logo" width="40" height="40" class="d-inline-block align-top">
+        <span class="brand-text">StudyBuddy</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="study-now.html">Study Tools</a></li>
+          <li class="nav-item"><a class="nav-link" href="procrastination.html">Productivity</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Transform Your Study Habits</h1>
+          <p class="hero-subtitle">Unlock your academic potential with AI-powered study tools, personalized learning paths, and proven productivity techniques.</p>
+          <div class="cta-group">
+            <a href="study-now.html" class="btn btn-primary btn-lg">Get Started Free</a>
+            <a href="#features" class="btn btn-outline-secondary btn-lg">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div id="studyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/study1.jpg" class="d-block w-100" alt="Study Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/study2.jpg" class="d-block w-100" alt="Study Image 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#studyCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#studyCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Why Choose StudyBuddy?</h2>
+      <div class="row features-grid g-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100 p-4">
+            <div class="feature-icon mb-3">
+              <i class="fas fa-brain fa-2x text-primary"></i>
+            </div>
+            <h3>Smart Focus Timer</h3>
+            <p>Enhanced Pomodoro technique with AI-driven break suggestions and productivity analytics to optimize your study sessions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100 p-4">
+            <div class="feature-icon mb-3">
+              <i class="fas fa-robot fa-2x text-primary"></i>
+            </div>
+            <h3>AI Study Assistant</h3>
+            <p>24/7 intelligent support for homework help, concept explanations, and personalized learning recommendations.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100 p-4">
+            <div class="feature-icon mb-3">
+              <i class="fas fa-chart-line fa-2x text-primary"></i>
+            </div>
+            <h3>Progress Tracking</h3>
+            <p>Comprehensive analytics dashboard to monitor your study patterns, track goals, and identify areas for improvement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="statistics bg-light py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <h2 class="display-4 fw-bold">10K+</h2>
+          <p class="text-muted">Active Students</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h2 class="display-4 fw-bold">95%</h2>
+          <p class="text-muted">Success Rate</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h2 class="display-4 fw-bold">50+</h2>
+          <p class="text-muted">Study Tools</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">How StudyBuddy Works</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="step-card text-center">
+            <div class="step-number mb-3">1</div>
+            <h3>Create Your Profile</h3>
+            <p>Set up your academic goals, study preferences, and subject areas to get personalized recommendations.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card text-center">
+            <div class="step-number mb-3">2</div>
+            <h3>Choose Your Tools</h3>
+            <p>Select from our suite of study tools including focus timer, flashcards, note-taking, and AI assistance.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card text-center">
+            <div class="step-number mb-3">3</div>
+            <h3>Track Progress</h3>
+            <p>Monitor your improvement with detailed analytics and adjust your study strategy for optimal results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">What Students Say</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-card p-4">
+            <div class="stars mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">"StudyBuddy transformed my study habits. The AI assistant helped me understand complex topics, and the focus timer kept me on track."</p>
+            <div class="testimonial-author">
+              <h5 class="mb-0">Sarah Johnson</h5>
+              <p class="text-muted">Computer Science Student</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-card p-4">
+            <div class="stars mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">"The progress tracking feature helped me identify my weak areas and improve my study efficiency. My grades have improved significantly!"</p>
+            <div class="testimonial-author">
+              <h5 class="mb-0">Michael Chen</h5>
+              <p class="text-muted">Medical Student</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-card p-4">
+            <div class="stars mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">"As a working student, time management was crucial for me. StudyBuddy's tools helped me balance my studies and work effectively."</p>
+            <div class="testimonial-author">
+              <h5 class="mb-0">Emma Davis</h5>
+              <p class="text-muted">Business Student</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Ready to Transform Your Academic Journey?</h2>
+      <p class="lead mb-4">Join thousands of successful students who have already improved their study habits with StudyBuddy.</p>
+      <a href="study-now.html" class="btn btn-primary btn-lg">Start Free Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./assets/images/logo.png" alt="StudyBuddy Logo" width="50" height="50">
+          <h4>StudyBuddy</h4>
+          <p>Elevating Academic Performance</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="study-now.html">Study Tools</a></li>
+              <li><a href="procrastination.html">Productivity Guide</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="feedback.html">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Documentation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 StudyBuddy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
